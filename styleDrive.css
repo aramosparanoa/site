@@ -51,9 +51,11 @@
   body {
     font: 400 1rem var(--body-font);
     color: #ffffff;
-    background: var(--body-color);
+    background: linear-gradient(45deg, #8e2de2, #4a00e0);
     -webkit-font-smoothing: antialiased;
     overflow: hidden;
+    width: 100%;
+    
   
   }
   
@@ -820,3 +822,7 @@
     margin-top: 1rem;
   }
   
+
+  #fundo{
+    height: 100%;
+  }
