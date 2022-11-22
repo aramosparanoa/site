@@ -48,7 +48,7 @@ body {
   color: #000000;
   background: var(--body-color);
   -webkit-font-smoothing: antialiased;
-  overflow: hidden;
+  /*overflow: hidden;*/
 
 }
 
@@ -850,25 +850,25 @@ input {
   border-radius: 10px;
   border: none;
   padding: 0.5%;
-  width: 58rem;
+  width: 47%rem;
   height: 4rem;
   font-family: 700 var(--title-font-size) var(--title-font);
 }
 
 #nomesobrenome{
-  width: 57rem;
+  width: 47%rem;
   height: 0.5rem;
   font-family: 700 var(--title-font-size) var(--title-font);
 }
 
 #email{
-  width: 57rem;
+  width: 47%rem;
   height: 0.5rem;
   font-family: 700 var(--title-font-size) var(--title-font);
 }
 
 #telefone{
-  width: 57rem;
+  width: 47%rem;
   height: 0.5rem;
   font-family: 700 var(--title-font-size) var(--title-font);
 }
