@@ -762,3 +762,8 @@ footer .social a:hover {
   }
 }
 /* medium devices: 767 > */
+
+.logout{
+  width: 50px;
+
+}
