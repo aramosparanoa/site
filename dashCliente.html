@@ -7,6 +7,42 @@
     <link rel="stylesheet" href="styleDCliente.css" />
     <title>Drive</title>
     <link rel="shortcut icon" href="ico/icon-logo.ico" type="image/x-icon">
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <script>
+
+
+        google.charts.load('current', {'packages':['corechart']});
+
+        function desenharPizza (){
+
+            var tabela = new google.visualization.DataTable();
+            tabela.addColumn('string','categorias');
+            tabela.addColumn('number','valores');
+            tabela.addRows([
+
+                ['Brasil',10,],
+                ['Estados Unidos',8],
+                ['Alemanha',5],
+                
+            ]);
+            var opcoes = {
+    'title':'Clientes',
+    'height': 500,
+    'width': 800
+
+
+};
+
+            var grafico = new google.visualization.PieChart(document.getElementById('graficoPizza'));
+            grafico.draw(tabela);
+    }
+
+    google.charts.setOnLoadCallback(desenharPizza);
+
+
+    </script>
 </head>
 <body>
     <header id="header">
@@ -31,9 +67,9 @@
                 </div>
 
                 <div class="title">
-                  <button>FORMULÁRIO  ▼</button>
+                  <button>PLANILHAS  ▼</button>
                   <div class="dropdown-options">
-                    <a href="#">Controle de Clientes</a>
+                    <a href="planilhaCliente.html">Controle de Clientes</a>
                     <a href="#">Controle de Reclamações</a>
                   </div>
                 </div>
@@ -52,15 +88,11 @@
         </nav>
       </header>
 
-      <div class="formulario">
-        <!--<div class="TituloContato">ENTRE EM CONTATO CONOSCO</div>-->
-        <form name="frmContato" method="get" action="mailto:teste@mail.com" target="_blank">
-            <fieldset>
-                
-                <legend id="dados">Dados Pessoais</legend>
-            <input type="submit" value="Enviar formulário" class="enviar" onclick="JavaScript:alert('Seu contato foi requisitado, lhe atualizaremos em breve');">
-        </fieldset>
-      </form>
-        </div>
+        <main>
+          <br>
+          <br>
+          <div id="graficoPizza"></div>
+          
+        <a id="baixar" href=".\img\Paises_Clientes.png" download >Baixar Gráfico</a>
 </body>
 </html>

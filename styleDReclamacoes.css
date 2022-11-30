@@ -53,7 +53,7 @@ body {
   color: #ffffff;
   background: linear-gradient(45deg, #8e2de2, #4a00e0);
   -webkit-font-smoothing: antialiased;
-  overflow: hidden;
+ 
   width: 100%;
   
 
@@ -826,3 +826,28 @@ button:hover{
 #fundo{
   height: 100%;
 }
+
+#baixar {
+
+  display: block;
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  margin-bottom: 25rem;
+  margin-left: 45%;
+  background-color: white;
+  color: linear-gradient(45deg, #8e2de2, #4a00e0);;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  }
+ #baixar:hover{
+
+
+      background: linear-gradient(to right, #4776E6, #8e54e9);
+      color: white;
+  }
+
+  
