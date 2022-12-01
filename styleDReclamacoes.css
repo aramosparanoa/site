@@ -849,5 +849,10 @@ button:hover{
       background: linear-gradient(to right, #4776E6, #8e54e9);
       color: white;
   }
-
+  #grafico{
+    width: 70%;
+    margin-left: 15%;
+    border-radius: 20px;
+    
+  }
   
